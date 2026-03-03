@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colombia Ando Tours - Agencia de Viajes</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css" >
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- Navegación -->
+    <nav class="fixed w-full z-50 glass-nav py-4 px-6 md:px-12 flex justify-between items-center custom-shadow">
+        <div class="flex items-center gap-2">
+            <div class="p-2  text-white round">
+                <img class="img-logo" src="src/img/icon.jpg" alt="">
+            </div>
+            <span class="text-2xl font-bold tracking-tight text-green-900">Colombiando Tours</span>
+        </div>
+        
+        <!-- Desktop Menu -->
+        <ul class="hidden md:flex gap-8 font-medium text-gray-600">
+            <li><a href="#inicio" class="hover:text-green-600 transition">Inicio</a></li>
+            <li><a href="#viajes" class="hover:text-green-600 transition">Viajes</a></li>
+            <li><a href="#nosotros" class="hover:text-green-600 transition">Nosotros</a></li>
+            <li><a href="#testimonios" class="hover:text-green-600 transition">Opiniones</a></li>
+            <li><a href="#contacto" class="hover:text-green-600 transition">Contacto</a></li>
+        </ul>
+
+        <button class="md:hidden text-2xl" id="menuBtn">
+            <i class="fas fa-bars"></i>
+        </button>
+    </nav>
+
+    <!-- Menú Móvil Overlay -->
+    <div id="mobileMenu" class="fixed inset-0 bg-white z-[60] flex flex-col items-center justify-center gap-8 text-2xl font-bold hidden">
+        <button class="absolute top-6 right-6" id="closeMenu"><i class="fas fa-times"></i></button>
+        <a href="#inicio" onclick="toggleMenu()">Inicio</a>
+        <a href="#viajes" onclick="toggleMenu()">Viajes</a>
+        <a href="#nosotros" onclick="toggleMenu()">Nosotros</a>
+        <a href="#contacto" onclick="toggleMenu()">Contacto</a>
+    </div>
+
+    <!-- Hero Section -->
+    <header id="inicio" class="hero-gradient h-screen flex items-center justify-center text-center text-white px-4">
+        <div class="max-w-3xl">
+            <h1 class="text-5xl md:text-7xl font-bold mb-6">Descubre tu próximo destino</h1>
+            <p class="text-lg md:text-xl mb-8 text-gray-200">Experiencias únicas diseñadas para viajeros que buscan algo más que un simple viaje.</p>
+            <div class="flex flex-col md:flex-row gap-4 justify-center">
+                <a href="#viajes" class="bg-green-600 hover:bg-green-700 text-white px-8 py-4 rounded-full font-bold transition">Ver Paquetes</a>
+                <a href="#contacto" class="bg-white/20 hover:bg-white/30 backdrop-blur text-white border border-white px-8 py-4 rounded-full font-bold transition">Contactar Asesor</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Destinos Populares -->
+    <section id="viajes" class="py-20 px-6 md:px-12 max-w-7xl mx-auto">
+        <div class="text-center mb-16">
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Destinos Destacados</h2>
+            <div class="h-1 w-20 bg-green-600 mx-auto mb-4"></div>
+            <p class="text-gray-600">Nuestra selección exclusiva para esta temporada</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Card 1 -->
+            <div class="destination-card bg-white rounded-2xl overflow-hidden custom-shadow group">
+                <div class="relative overflow-hidden h-64">
+                    <img src="src/img/ranchotermales.jpeg" alt="Playa Paraíso" class="w-full h-full object-cover">
+                    <div class="absolute top-4 right-4 bg-white/90 px-3 py-1 rounded-full text-sm font-bold text-green-600">
+                        Pasadia $155.000
+                    </div>
+                </div>
+                <div class="p-6">
+                    <h3 class="text-xl font-bold mb-2">Termales el Rancho</h3>
+                    <p class="text-gray-600 text-sm mb-4"> En la ruta del agua camina, conecta y disfruta de las aguas termales que emergen del volcán. </p>
+                    <div class="flex justify-between items-center">
+                        <span class="text-xs text-gray-400"><i class="fas fa-clock mr-1"></i> Disponible todos los domingos</span>
+                        <a href="https://wa.me/p/7778196488929091/573009685000"> <button class="text-green-600 font-semibold hover:underline">Detalles <i class="fas fa-arrow-right ml-1"></i></button></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="destination-card bg-white rounded-2xl overflow-hidden custom-shadow">
+                <div class="relative overflow-hidden h-64">
+                    <img src="src/img/murillo.jpeg" alt="Londres" class="w-full h-full object-cover">
+                    <div class="absolute top-4 right-4 bg-white/90 px-3 py-1 rounded-full text-sm font-bold text-green-600">
+                        Pasadia $320.000
+                    </div>
+                </div>
+                <div class="p-6">
+                    <h3 class="text-xl font-bold mb-2">Murillo y Parque Los Nevados</h3>
+                    <p class="text-gray-600 text-sm mb-4">Visita Murillo y conoce los ecosistemas de los paramos, y el valle de las tumbas.</p>
+                    <div class="flex justify-between items-center">
+                        <span class="text-xs text-gray-400"><i class="fas fa-clock mr-1"></i> Todos los domingos</span>
+                       
+                   <a href="https://wa.me/p/7725786454165170/573009685000"> <button class="text-green-600 font-semibold hover:underline">Detalles <i class="fas fa-arrow-right ml-1"></i></button></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="destination-card bg-white rounded-2xl overflow-hidden custom-shadow">
+                <div class="relative overflow-hidden h-64">
+                    <img src="src/img/tourcolombia.jpeg" alt="Montaña" class="w-full h-full object-cover">
+                    <div class="absolute top-4 right-4 bg-white/90 px-3 py-1 rounded-full text-sm font-bold text-green-600">
+                        Tour(30 días) desde $
+                    </div>
+                </div>
+                <div class="p-6">
+                    <h3 class="text-xl font-bold mb-2">Tour por Colombia</h3>
+                    <p class="text-gray-600 text-sm mb-4">Recorre y admirate viajando por el pais de la belleza, en un tour diseñado para los mas aventureros.</p>
+                    <div class="flex justify-between items-center">
+                        <span class="text-xs text-gray-400"><i class="fas fa-clock mr-1"></i> Bajo demanda </span>
+                        <button class="text-green-600 font-semibold hover:underline">Detalles <i class="fas fa-arrow-right ml-1"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Sobre Nosotros -->
+    <section id="nosotros" class="py-20 bg-green-900 text-white px-6 md:px-12">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div>
+                <h2 class="text-3xl md:text-4xl font-bold mb-6">Expertos en crear recuerdos inolvidables</h2>
+                <p class="text-green-100 mb-6 leading-relaxed">
+                    En Colombia Ando Tours, no solo vendemos boletos; diseñamos experiencias personalizadas. Con más de 15 años en el sector, conocemos cada rincón del planeta y nos aseguramos de que cada detalle de tu viaje sea perfecto.
+                </p>
+                <div class="grid grid-cols-2 gap-6 mb-8">
+                    <div>
+                        <h4 class="text-2xl font-bold text-green-400">15k+</h4>
+                        <p class="text-sm text-green-200">Viajeros Felices</p>
+                    </div>
+                    <div>
+                        <h4 class="text-2xl font-bold text-green-400">50+</h4>
+                        <p class="text-sm text-green-200">Destinos Globales</p>
+                    </div>
+                </div>
+                <button class="bg-white text-green-900 font-bold px-8 py-3 rounded-lg hover:bg-green-50 transition">Leer Nuestra Historia</button>
+            </div>
+            <div class="relative">
+                <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Equipo" class="rounded-2xl shadow-2xl">
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonios -->
+    <section id="testimonios" class="py-20 px-6 bg-gray-50">
+        <div class="max-w-7xl mx-auto text-center">
+            <h2 class="text-3xl font-bold mb-12">Lo que dicen nuestros viajeros</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-left">
+                <div class="bg-white p-8 rounded-2xl shadow-sm">
+                    <div class="text-yellow-400 mb-4"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <p class="italic text-gray-600 mb-4">"El mejor viaje de mi vida. Todo estuvo organizado al milímetro, desde el transporte hasta los guías locales."</p>
+                    <div class="font-bold text-gray-900">- María García</div>
+                </div>
+                <div class="bg-white p-8 rounded-2xl shadow-sm border-t-4 border-green-600">
+                    <div class="text-yellow-400 mb-4"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <p class="italic text-gray-600 mb-4">"Reservar fue sencillísimo. El equipo de soporte estuvo disponible 24/7 durante nuestra estancia en Japón."</p>
+                    <div class="font-bold text-gray-900">- Juan Pérez</div>
+                </div>
+                <div class="bg-white p-8 rounded-2xl shadow-sm">
+                    <div class="text-yellow-400 mb-4"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <p class="italic text-gray-600 mb-4">"Precios competitivos y una atención humana excepcional. Colombia Ando Tours es mi agencia de confianza ahora."</p>
+                    <div class="font-bold text-gray-900">- Elena Smith</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contacto -->
+    <section id="contacto" class="py-20 px-6 md:px-12 max-w-7xl mx-auto">
+        <div class="bg-white rounded-3xl overflow-hidden custom-shadow grid grid-cols-1 lg:grid-cols-2">
+            <div class="p-8 md:p-12">
+                <h2 class="text-3xl font-bold mb-6">Planifica tu aventura</h2>
+                <p class="text-gray-600 mb-8">Déjanos tus datos y un especialista te contactará en menos de 24 horas.</p>
+                
+                <form id="contactForm" class="space-y-4">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <input type="text" placeholder="Nombre completo" class="w-full px-4 py-3 rounded-lg bg-gray-100 border-none focus:ring-2 focus:ring-green-600 outline-none" required>
+                        <input type="email" placeholder="Correo electrónico" class="w-full px-4 py-3 rounded-lg bg-gray-100 border-none focus:ring-2 focus:ring-green-600 outline-none" required>
+                    </div>
+                    <select class="w-full px-4 py-3 rounded-lg bg-gray-100 border-none focus:ring-2 focus:ring-green-600 outline-none text-gray-500">
+                        <option value="">Destino de interés</option>
+                        <option value="playa">Playa / Caribe</option>
+                        <option value="europa">Europa / Cultura</option>
+                        <option value="aventura">Montaña / Aventura</option>
+                        <option value="crucero">Cruceros</option>
+                    </select>
+                    <textarea placeholder="Cuéntanos más sobre tu viaje ideal..." rows="4" class="w-full px-4 py-3 rounded-lg bg-gray-100 border-none focus:ring-2 focus:ring-green-600 outline-none" required></textarea>
+                    <button type="submit" class="w-full bg-green-600 text-white font-bold py-4 rounded-lg hover:bg-green-700 transition">Enviar Solicitud</button>
+                </form>
+                <div id="formSuccess" class="hidden mt-4 p-4 bg-green-100 text-green-700 rounded-lg">
+                    ¡Mensaje enviado con éxito! Nos pondremos en contacto pronto.
+                </div>
+            </div>
+            <div class="bg-green-600 p-8 md:p-12 text-white flex flex-col justify-between">
+                <div>
+                    <h3 class="text-2xl font-bold mb-6">Información de contacto</h3>
+                    <div class="space-y-6">
+                        <div class="flex items-start gap-4">
+                            <i class="fas fa-map-marker-alt text-xl mt-1"></i>
+                            <p>Calle Principal 123, Ciudad Viajera,<br>Madrid, España 28001</p>
+                        </div>
+                        <div class="flex items-center gap-4">
+                            <i class="fas fa-phone-alt text-xl"></i>
+                            <p>+34 900 123 456</p>
+                        </div>
+                        <div class="flex items-center gap-4">
+                            <i class="fas fa-envelope text-xl"></i>
+                            <p>hola@viajesColombia Ando Tours.com</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex gap-4 mt-8">
+                    <a href="https://www.facebook.com/share/1E2ignxxDR/" class="w-10 h-10 bg-white/10 flex items-center justify-center rounded-full hover:bg-white/30 transition"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.tiktok.com/@colombiaandotours?_r=1&_t=ZS-94Ka8YQfOZW" class="w-10 h-10 bg-white/10 flex items-center justify-center rounded-full hover:bg-white/30 transition"><i class="fab fa-tiktok"></i></a>
+                    <a href="https://Wa.me/573009685000" class="w-10 h-10 bg-white/10 flex items-center justify-center rounded-full hover:bg-white/30 transition"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-400 py-12 px-6 md:px-12 border-t border-gray-800">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6 text-center md:text-left">
+            <div>
+                <div class="flex items-center gap-2 justify-center md:justify-start mb-4">
+                    <i class="fas fa-paper-plane text-green-500"></i>
+                    <span class="text-xl font-bold text-white tracking-tight">Colombia Ando Tours</span>
+                </div>
+                <p class="text-sm">© 2026 Colombia Ando Tours Agencia de Viajes. Todos los derechos reservados.</p>
+            </div>
+            <div class="flex gap-8 text-sm">
+                <a href="#" class="hover:text-white transition">Privacidad</a>
+                <a href="#" class="hover:text-white transition">Términos</a>
+                <a href="#" class="hover:text-white transition">Cookies</a>
+            </div>
+        </div>
+    </footer>
+
+
+</body>
+    <script src="app.js"></script>
+
+</html>
