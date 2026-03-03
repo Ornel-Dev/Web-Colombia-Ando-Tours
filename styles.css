@@ -40,3 +40,10 @@
 .round{
     border-radius: 50%;
 }
+
+
+    @media (min-width: 380px) {
+     .redes{
+        margin-top: 2rem;
+     }
+    }
