@@ -62,3 +62,29 @@
             card.classList.add('transition', 'duration-700', 'opacity-0', 'translate-y-10');
             observer.observe(card);
         });
+
+
+// Enviar emnsaje a whatsapp desde el formulario:
+document.addEventListener('DOMContentLoaded', () => {
+    const form = document.getElementById('contactForm');
+
+    form.addEventListener('submit', e => {
+        e.preventDefault();                // no enviar al servidor
+
+        const name    = form.querySelector('[name=name]').value.trim();
+        const email   = form.querySelector('[name=email]').value.trim();
+        const destino = form.querySelector('[name=destino]').value;
+        const msg     = form.querySelector('[name=message]').value.trim();
+
+        const texto = `Nombre: ${name}
+Email: ${email}
+Destino de interés: ${destino}
+Mensaje: ${msg}`;
+
+        const telefono = '573009685000'; // tu número internacional sin "+"
+        const url = `https://wa.me/${telefono}?text=${encodeURIComponent(texto)}`;
+
+        // redirige al chat de WhatsApp
+        window.location.href = url;
+    });
+});
