@@ -17,8 +17,9 @@
             <div class="p-2  text-white round">
                 <img class="img-logo" src="src/img/icon.jpg" alt="">
             </div>
-            <span class="text-2xl font-bold tracking-tight text-green-900">Colombiando Tours </span>
+            <span class="text-2xl font-bold tracking-tight text-green-900">Colombiando Tours</span >
         </div>
+        
         <!-- Desktop Menu -->
         <ul class="hidden md:flex gap-8 font-medium text-gray-600">
             <li><a href="#inicio" class="hover:text-green-600 transition">Inicio</a></li>
@@ -36,21 +37,30 @@
     <!-- Menú Móvil Overlay -->
     <div id="mobileMenu" class="fixed inset-0 bg-white z-[60] flex flex-col items-center justify-center gap-8 text-2xl font-bold hidden">
         <button class="absolute top-6 right-6" id="closeMenu"><i class="fas fa-times"></i></button>
-        <a href="#inicio" onclick="toggleMenu()">Inicio</a>
+        <a href="index.html" onclick="toggleMenu()">Inicio</a>
         <a href="#viajes" onclick="toggleMenu()">Viajes</a>
         <a href="#nosotros" onclick="toggleMenu()">Nosotros</a>
         <a href="#contacto" onclick="toggleMenu()">Contacto</a>
     </div>
 
     <!-- Hero Section -->
-   
+    <header id="inicio" class="hero-gradient h-screen flex items-center justify-center text-center text-white px-4">
+        <div class="max-w-3xl">
+            <h1 class="text-5xl md:text-7xl font-bold mb-6">Descubre tu próximo destino</h1>
+            <p class="text-lg md:text-xl mb-8 text-gray-200">Experiencias únicas diseñadas para viajeros que buscan algo más que un simple viaje.</p>
+            <div class="flex flex-col md:flex-row gap-4 justify-center">
+                <a href="#viajes" class="bg-green-600 hover:bg-green-700 text-white px-8 py-4 rounded-full font-bold transition">Ver Paquetes</a>
+                <a href="#contacto" class="bg-white/20 hover:bg-white/30 backdrop-blur text-white border border-white px-8 py-4 rounded-full font-bold transition">Contactar Asesor</a>
+            </div>
+        </div>
+    </header>
 
     <!-- Destinos Populares -->
     <section id="viajes" class="py-20 px-6 md:px-12 max-w-7xl mx-auto viajes">
         <div class="text-center mb-16">
-            <h1 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Paquetes Turisticos</h1>
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Destinos Destacados</h2>
             <div class="h-1 w-20 bg-green-600 mx-auto mb-4"></div>
-            <p class="text-gray-600">Viajes disponibles desde Colombia Ando Tours</p>
+            <p class="text-gray-600">Nuestra selección exclusiva para esta temporada</p>
         </div>
 
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -109,61 +119,13 @@
                 </div>
                 
             </div>
-            <button class="text-green-600 font-semibold hover:underline btn-mas "><a href="viajes.html">Conoce más aquí</a><i class="fas fa-arrow-right ml-1"></i></button>
+            <button class="text-green-600 font-semibold hover:underline btn-mas ">Conoce más aquí<i class="fas fa-arrow-right ml-1"></i></button>
         </div>
         
 
     </section>
 
-    <!-- Sección Sobre Nosotros -->
-    <section id="nosotros" class="py-20 bg-green-900 text-white px-6 md:px-12">
-        <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <div>
-                <h2 class="text-3xl md:text-4xl font-bold mb-6">Expertos en crear recuerdos inolvidables</h2>
-                <p class="text-green-100 mb-6 leading-relaxed">
-                    En Colombia Ando Tours, no solo vendemos boletos; diseñamos experiencias personalizadas. Con 2 años en el sector, conocemos cada rincón de Colombia y nos aseguramos de que cada detalle de tu viaje sea perfecto.
-                </p>
-                <div class="grid grid-cols-2 gap-6 mb-8">
-                    <div>
-                        <h4 class="text-2xl font-bold text-green-400">5k+</h4>
-                        <p class="text-sm text-green-200">Viajeros Felices</p>
-                    </div>
-                    <div>
-                        <h4 class="text-2xl font-bold text-green-400">50+</h4>
-                        <p class="text-sm text-green-200">Destinos Nacionales e Internacionales</p>
-                    </div>
-                </div>
-                <button class="bg-white text-green-900 font-bold px-8 py-3 rounded-lg hover:bg-green-50 transition">Leer Nuestra Historia</button>
-            </div>
-            <div class="relative">
-                <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Equipo" class="rounded-2xl shadow-2xl"> <!-- Esta imagen se debe cambiar -->
-            </div>
-        </div>
-    </section>
 
-    <!-- Testimonios -->
-    <section id="testimonios" class="py-20 px-6 bg-gray-50">
-        <div class="max-w-7xl mx-auto text-center">
-            <h2 class="text-3xl font-bold mb-12">Lo que dicen nuestros viajeros</h2>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-left">
-                <div class="bg-white p-8 rounded-2xl shadow-sm">
-                    <div class="text-yellow-400 mb-4"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
-                    <p class="italic text-gray-600 mb-4">"El mejor viaje de mi vida. Todo estuvo organizado al milímetro, desde el transporte hasta los guías locales."</p>
-                    <div class="font-bold text-gray-900">- María García</div>
-                </div>
-                <div class="bg-white p-8 rounded-2xl shadow-sm border-t-4 border-green-600">
-                    <div class="text-yellow-400 mb-4"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
-                    <p class="italic text-gray-600 mb-4">"Reservar fue sencillísimo. El equipo de soporte estuvo disponible 24/7 durante nuestra estancia en Murillo."</p>
-                    <div class="font-bold text-gray-900">- Loreiny Serpa</div>
-                </div>
-                <div class="bg-white p-8 rounded-2xl shadow-sm">
-                    <div class="text-yellow-400 mb-4"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
-                    <p class="italic text-gray-600 mb-4">"Precios competitivos y una atención humana excepcional. Colombia Ando Tours es mi agencia de confianza ahora."</p>
-                    <div class="font-bold text-gray-900">- Elena Smith</div>
-                </div>
-            </div>
-        </div>
-    </section>
 
     <!-- Contacto -->
     <section id="contacto" class="py-20 px-6 md:px-12 max-w-7xl mx-auto">
