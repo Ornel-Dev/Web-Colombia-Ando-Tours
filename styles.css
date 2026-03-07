@@ -54,3 +54,24 @@ body {
     }
 } 
 
+
+/* PAGINA DE VIAJES */
+.viajes{
+margin-top: 1rem;
+}
+.stiky{
+position: sticky;
+top: 0;
+}
+
+
+/* ensure mouse pointer on links */
+a, a:hover, .pointer{
+  cursor: pointer;
+pointer-events:auto;
+position: relative;
+
+}
+
+
+
