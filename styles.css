@@ -46,8 +46,11 @@ body {
   }
 }
 
+@media (min-width:780px){
+ 
+    .btn-mas{
+        grid-column: 3 / 4 ;
+        justify-self: end;
+    }
+} 
 
-.btn-mas{
-    grid-column: 3 / 4 ;
-    justify-self: end;
-}
