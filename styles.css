@@ -1,49 +1,53 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap");
 
-        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
-        
-        body {
-            font-family: 'Poppins', sans-serif;
-            scroll-behavior: smooth;
-        }
-      
-
-        .hero-gradient {
-            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('src/img/hero.webp');
-            background-size: cover;
-            background-position: center top;
-        }
-
-        .glass-nav {
-            background: rgba(255, 255, 255, 0.95);
-            backdrop-filter: blur(10px);
-            transition: all 0.3s ease;
-        }
-
-        .destination-card:hover img {
-            transform: scale(1.1);
-        }
-
-        .destination-card img {
-            transition: transform 0.5s ease;
-        }
-
-        .custom-shadow {
-            box-shadow: 0 10px 30px -5px rgba(0, 0, 0, 0.1);
-        }
-  
-
-.img-logo{
-    width: 5rem;
-    height: 5rem;
-    border-radius: 50%;
-}
-.round{
-    border-radius: 50%;
+body {
+  font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
 }
 
+.hero-gradient {
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("src/img/hero.webp");
+  background-size: cover;
+  background-position: center top;
+}
 
-    @media (min-width: 380px) {
-     .redes{
-        margin-top: 2rem;
-     }
-    }
+.glass-nav {
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  transition: all 0.3s ease;
+}
+
+.destination-card:hover img {
+  transform: scale(1.1);
+}
+
+.destination-card img {
+  transition: transform 0.5s ease;
+}
+
+.custom-shadow {
+  box-shadow: 0 10px 30px -5px rgba(0, 0, 0, 0.1);
+}
+
+.img-logo {
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+}
+.round {
+  border-radius: 50%;
+}
+
+@media (min-width: 380px) {
+  .redes {
+    margin-top: 2rem;
+  }
+}
+
+
+.btn-mas{
+    grid-column: 3 / 4 ;
+    justify-self: end;
+}
