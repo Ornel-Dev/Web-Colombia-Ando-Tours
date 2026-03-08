@@ -40,10 +40,18 @@ body {
   border-radius: 50%;
 }
 
-@media (min-width: 380px) {
-  .redes {
-    margin-top: 2rem;
-  }
+
+
+.redes{
+  margin-top: 2rem;
+
+
+}
+@media (max-width: 380px ) {
+ .font-small{
+  font-size: small;
+ }
+
 }
 
 @media (min-width:1024px){
@@ -52,7 +60,8 @@ body {
         grid-column: 3 / 4 ;
         justify-self: end;
     }
-} 
+}
+
 
 
 /* PAGINA DE VIAJES */
@@ -71,6 +80,13 @@ a, a:hover, .pointer{
 pointer-events:auto;
 position: relative;
 
+}
+
+.btn-mas{
+justify-self: center;
+align-items: center;
+height: max-content;
+justify-content: center;
 }
 
 
