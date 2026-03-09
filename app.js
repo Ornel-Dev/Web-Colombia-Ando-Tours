@@ -88,3 +88,4 @@ Mensaje: ${msg}`;
         window.location.href = url;
     });
 });
+
