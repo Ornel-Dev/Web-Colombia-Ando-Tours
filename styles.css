@@ -1,9 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap");
-@font-face {
-    font-family: 'Arvo';
-    font-display: auto;
-    src: local('Arvo'), url(https://fonts.gstatic.com/s/arvo/v9/rC7kKhY-eUDY-ucISTIf5PesZW2xOQ-xsNqO47m55DA.woff2) format('woff2');
-}
+
 body {
   font-family: "Poppins", sans-serif;
   scroll-behavior: smooth;
