@@ -5,26 +5,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Colombia Ando Tours - Agencia de Viajes</title>
-    <script rel="preconnect" src="https://cdn.tailwindcss.com"></script>
-    <link rel="preconnect" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
-    <link rel="preload" rel="stylesheet" href="styles.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
     <link rel="shortcut icon" href="src/img/icon.avif" type="image/x-icon">
 </head>
 
 <body class="bg-gray-50 text-gray-800">
 
     <!-- Navegación -->
-    <nav class="fixed w-full z-50 glass-nav py-4 px-6 md:px-12 flex justify-between items-center custom-shadow">
-        <div class="flex items-center gap-2">
+    <nav class="stiky w-full z-50 glass-nav py-4 px-6 md:px-12 flex justify-between items-center custom-shadow">
+        <div class="pointer flex items-center gap-2">
             <div class="p-2  text-white round">
-                <a class="pointer" href="index.html"><img class="img-logo" src="src/img/icon.avif" alt=""></a>
-                    <!-- TITULO DE LA PAGINA -->
+                <a class="pointer" href="index.html"><img  class="img-logo" src="src/img/icon.avif" alt=""></a>
             </div>
-           <a class="pointer" href="index.html"><span class="text-2xl font-bold tracking-tight text-green-900">Colombiando Tours <br> <span class="font-small"> RNT:191710 </span> </span ></a>
+            <a class="pointer" href="index.html"><span
+                    class="text-2xl font-bold tracking-tight text-green-900">Colombiando Tours <br> <span
+                        class="font-small"> RNT:191710 </span> </span></a>
         </div>
+
         <!-- Desktop Menu -->
         <ul class="hidden md:flex gap-8 font-medium text-gray-600">
-            <li><a href="#inicio" class="hover:text-green-600 transition">Inicio</a></li>
+            <li><a href="index.html" class="hover:text-green-600 transition">Inicio</a></li>
             <li><a href="#viajes" class="hover:text-green-600 transition">Viajes</a></li>
             <li><a href="#nosotros" class="hover:text-green-600 transition">Nosotros</a></li>
             <li><a href="#testimonios" class="hover:text-green-600 transition">Opiniones</a></li>
@@ -40,7 +42,7 @@
     <div id="mobileMenu"
         class="fixed inset-0 bg-white z-[60] flex flex-col items-center justify-center gap-8 text-2xl font-bold hidden">
         <button class="absolute top-6 right-6" id="closeMenu"><i class="fas fa-times"></i></button>
-        <a href="#inicio" onclick="toggleMenu()">Inicio</a>
+        <a href="index.html" onclick="toggleMenu()">Inicio</a>
         <a href="#viajes" onclick="toggleMenu()">Viajes</a>
         <a href="#nosotros" onclick="toggleMenu()">Nosotros</a>
         <a href="#contacto" onclick="toggleMenu()">Contacto</a>
