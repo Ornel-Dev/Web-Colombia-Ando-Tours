@@ -4,7 +4,9 @@ body {
   font-family: "Poppins", sans-serif;
   scroll-behavior: smooth;
 }
-
+html{
+  scroll-behavior: smooth;
+}
 .hero-gradient {
   background:
     linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
@@ -40,54 +42,89 @@ body {
   border-radius: 50%;
 }
 
-
-
-.redes{
+.redes {
   margin-top: 2rem;
-
-
 }
-@media (max-width: 380px ) {
- .font-small{
-  font-size: small;
- }
-
+@media (max-width: 380px) {
+  .font-small {
+    font-size: small;
+  }
 }
 
-@media (min-width:1024px){
- 
-    .btn-mas{
-        grid-column: 3 / 4 ;
-        justify-self: end;
-    }
+@media (min-width: 1024px) {
+  .btn-mas {
+    grid-column: 3 / 4;
+    justify-self: end;
+  }
 }
+/* REDIMENSIÓN DEL TITULO NAV */
 
 
 
 /* PAGINA DE VIAJES */
-.viajes{
-margin-top: 1rem;
+.viajes {
+  margin-top: 1rem;
 }
-.stiky{
-position: sticky;
-top: 0;
+.stiky {
+  position: sticky;
+  top: 0;
 }
-
 
 /* ensure mouse pointer on links */
-a, a:hover, .pointer{
+a,
+a:hover,
+.pointer {
   cursor: pointer;
-pointer-events:auto;
-position: relative;
-
+  pointer-events: auto;
+  position: relative;
 }
 
-.btn-mas{
-justify-self: center;
-align-items: center;
-height: max-content;
-justify-content: center;
+.btn-mas {
+  justify-self: center;
+  align-items: center;
+  height: max-content;
+  justify-content: center;
 }
 
+/* ESTILOS DE LA PAGINA DE HISTORIA */
 
+.histori {
+  max-width: 90%;
+  margin: 0 auto;
+}
+.lista {
+  list-style: disc;
+  padding-left: 2rem;
+  margin-top: 1rem;
+}
 
+/* ESTILOS PARA LA PAGINA DE VIAJES */
+
+.nav-viajes {
+  max-width: 95%;
+  margin: 0 auto;
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+.nav-viajes a {
+  display: inline-block;
+  text-align: center;
+  padding: 1rem;
+  font-weight: bold;
+  color: #1f2937;
+  background-color: #ffffff;
+  border-radius: 4rem;
+  transition: background-color 0.5s ease-in-out;
+  transition: color 0.3s ease;
+}
+.nav-viajes a:hover{
+  background-color: rgb(21, 163, 73);
+  color: #ffffff;
+}
+ .center-text{
+  text-align: center;
+ }

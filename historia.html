@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colombia Ando Tours - Agencia de Viajes</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="src/img/icon.avif" type="image/x-icon">
+</head>
+
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- Navegación -->
+    <nav class="stiky w-full z-50 glass-nav py-4 px-6 md:px-12 flex justify-between items-center custom-shadow">
+        <div class="pointer flex items-center gap-2">
+            <div class="p-2  text-white round">
+                <a class="pointer" href="index.html"><img class="img-logo" src="src/img/icon.avif" alt=""></a>
+            </div>
+            <a class="pointer" href="index.html"><span
+                    class="text-2xl font-bold tracking-tight text-green-900">Colombia Ando Tours <br> <span
+                        class="font-small"> RNT:191710 </span> </span></a>
+        </div>
+
+        <!-- Desktop Menu -->
+        <ul class="hidden md:flex gap-8 font-medium text-gray-600">
+            <li><a href="index.html" class="hover:text-green-600 transition">Inicio</a></li>
+            <li><a href="index.html#viajes" class="hover:text-green-600 transition">Viajes</a></li>
+            <li><a href="index.html#nosotros" class="hover:text-green-600 transition">Nosotros</a></li>
+            <li><a href="index.html#testimonios" class="hover:text-green-600 transition">Opiniones</a></li>
+            <li><a href="index.html#contacto" class="hover:text-green-600 transition">Contacto</a></li>
+        </ul>
+
+        <button class="md:hidden text-2xl" id="menuBtn">
+            <i class="fas fa-bars"></i>
+        </button>
+    </nav>
+
+    <!-- Menú Móvil Overlay -->
+    <div id="mobileMenu"
+        class="fixed inset-0 bg-white z-[60] flex flex-col items-center justify-center gap-8 text-2xl font-bold hidden">
+        <button class="absolute top-6 right-6" id="closeMenu"><i class="fas fa-times"></i></button>
+        <a href="index.html" onclick="toggleMenu()">Inicio</a>
+        <a href="index.html#viajes" onclick="toggleMenu()">Viajes</a>
+        <a href="index.html#nosotros" onclick="toggleMenu()">Nosotros</a>
+        <a href="index.html#testimonios" onclick="toggleMenu()">Opiniones</a>
+        <a href="index.html#contacto" onclick="toggleMenu()">Contacto</a>
+    </div>
+
+    <!-- Hero Section -->
+    <header id="inicio" class="hero-gradient h-screen flex items-center justify-center text-center text-white px-4">
+        <div class="max-w-3xl">
+            <h1 class="text-5xl md:text-7xl font-bold mb-6">Nuestra Historia</h1>
+            <p class="text-lg md:text-xl mb-8 text-gray-200">Esta la historia de Colombia Ando Tours, contada desde el
+                latido de quien vio en las montañas de nuestro Tolima no solo un paisaje, sino un propósito de vida.</p>
+
+        </div>
+    </header>
+
+ 
+
+    <section class="histori">
+
+        <h2 class="text-3xl font-bold mb-9 mt-9 ">Caminar el Territorio: El Corazón detrás de Colombia Ando Tours</h2>
+        <cite>Por Jhonatan Stivel Avila</cite>
+
+        <p>
+            ​A veces me detengo a respirar el aire fresco del Cañón del Combeima y me doy cuenta de que este proyecto no
+            es solo una empresa; es, ante todo, una pasión por servir. Siempre me he considerado un siervo de la
+            humanidad, alguien que encuentra su mayor alegría en conectar a otros con la magia que nos rodea. Así nació
+            esta locura llamada Colombia Ando Tours, de un anhelo profundo por transformar sueños en experiencias que se
+            quedan grabadas en la piel.
+        </p>
+
+        <h2 class="text-3xl font-bold mb-9 mt-9 ">​El Chispazo en la Montaña</h2>
+
+        <p> ​Todo comenzó hace unos dos años y medio. En aquel entonces, mientras me sumergía en mis estudios de guianza
+            y trabajaba en la zona de Juntas, algo dentro de mí hizo clic. Al observar el ir y venir de los visitantes
+            en el hotel, noté que faltaba algo. Teníamos el paisaje más imponente del mundo, pero nos faltaba la
+            narrativa, el guion, el acompañamiento que hiciera que el turista no solo "pasara" por aquí, sino que
+            viviera el lugar.
+            ​Sentí la necesidad de resaltar lo que somos. No quería ser un espectador más; quería ser quien abriera la
+            puerta a los secretos de nuestra tierra. Empecé a aprender de los que saben: historiadores, fotógrafos,
+            arquitectos y, sobre todo, de la gente que ha habitado estas montañas por generaciones.</p>
+
+        <h2 class="text-3xl font-bold mb-9 mt-9 ">​Nuestros Tres Pilares: El Triángulo de la Experiencia</h2>
+
+        <p>​Colombia Ando Tours se sostiene sobre tres bases que para mí son innegociables:</p>
+        <ul class="lista">
+            <li><strong>​Aventura:</strong> Para despertar el espíritu y recordarnos que estamos vivos.</li>
+            <li><strong>​Naturaleza:</strong> Porque somos parte de ella y necesitamos volver a nuestras raíces.</li>
+            <li><strong>​Bienestar:</strong> Para sanar el alma a través del silencio y la contemplación.</li>
+        </ul>
+        ​<p>He aprendido que para hablar de un lugar con propiedad, primero hay que caminarlo. He gastado mis botas
+            recorriendo senderos, conociendo cada cascada y cada rincón del Cañón del Combeima, no solo como guía, sino
+            como alguien que ama profundamente su hogar.
+        </p>
+
+        <h2 class="text-3xl font-bold mb-9 mt-9 ">​Un Sueño que se Teje en Comunidad</h2>
+
+        ​<p>Este camino no lo he recorrido solo. Creer en el turismo comunitario ha sido la clave. De la mano con
+            asociaciones como Agroecotur, hemos trabajado para que este crecimiento sea de todos. No se trata solo de
+            vender un tour; se trata de que el campesino, el guía local y la comunidad entera crezcan conmigo.
+            ​"A veces todavía no me la creo. Siento que estoy viviendo un sueño que apenas comienza a despertar."</p>
+        <br>
+
+        <p>​Hoy, cuando miro hacia atrás, veo que Colombia Ando Tours es el resultado de proyecciones, anhelos y mucho
+            trabajo honesto. No buscamos ser simplemente una agencia más en el mercado; queremos ser esa experiencia
+            receptiva que te haga sentir que Colombia, y especialmente nuestro Tolima, es el lugar más acogedor de la
+            tierra.</p>
+
+        <p>​Estamos aquí para invitarte a caminar con nosotros, a integrarte con el entorno y a descubrir que, al final
+            del día, lo más importante es estar en el estado presente, disfrutando de cada paso en esta montaña que
+            llamamos hogar.</p>
+        <a href="index.html">
+            <h2 class="text-2xl font-bold mb-2 mt-9 "> ​¡Bienvenidos a nuestra historia! Bienvenidos a Colombia Ando
+                Tours.</h2>
+        </a>
+
+
+    </section>
+
+
+    <!-- Contacto -->
+    <section id="contacto" class="py-20 px-6 md:px-12 max-w-7xl mx-auto">
+
+        </div>
+        <div class="bg-green-600 p-8 md:p-12 text-white flex flex-col justify-between">
+            <div>
+                <h3 class="text-2xl font-bold mb-6">Información de contacto</h3>
+                <div class="space-y-6">
+                    <div class="flex items-start gap-4">
+                        <i class="fas fa-map-marker-alt text-xl mt-1"></i>
+                        <a href="https://maps.app.goo.gl/JnzHTBK2vZfnAV8g7">
+                            <p>Carrera 2 #8-47, Villa Restrepo,<br>Ibagué, Tolima, Colombia</p>
+                        </a>
+                    </div>
+                    <div class="flex items-center gap-4">
+                        <i class="fas fa-phone-alt text-xl"></i>
+                       <a href="https://wa.me/573009685000"><p>+57 300 968 5000</p></a> 
+                    </div>
+                    <div class="flex items-center gap-4">
+                        <i class="fas fa-envelope text-xl"></i>
+                        <p>agencia@colombiaandotours.com</p>
+                    </div>
+                </div>
+            </div>
+            <div class="redes">
+
+                <p>Conoce nuestras redes sociales</p>
+                <div class="flex gap-4 mt-2">
+                    <a href="https://www.facebook.com/share/1E2ignxxDR/"
+                        class="w-10 h-10 bg-white/10 flex items-center justify-center rounded-full hover:bg-white/30 transition"><i
+                            class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.tiktok.com/@colombiaandotours?_r=1&_t=ZS-94Ka8YQfOZW"
+                        class="w-10 h-10 bg-white/10 flex items-center justify-center rounded-full hover:bg-white/30 transition"><i
+                            class="fab fa-tiktok"></i></a>
+                    <a href="https://Wa.me/573009685000"
+                        class="w-10 h-10 bg-white/10 flex items-center justify-center rounded-full hover:bg-white/30 transition"><i
+                            class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+
+        </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-400 py-12 px-6 md:px-12 border-t border-gray-800">
+        <div
+            class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6 text-center md:text-left">
+            <div>
+                <div class="flex items-center gap-2 justify-center md:justify-start mb-4">
+                    <span class="text-xl font-bold text-white tracking-tight">Colombia Ando Tours</span>
+                </div>
+                <p class="text-sm">© 2026 Colombia Ando Tours Agencia de Viajes. Todos los derechos reservados.</p>
+            </div>
+            <div class="flex gap-8 text-sm">
+                <a href="#" class="hover:text-white transition">Privacidad</a>
+                <a href="#" class="hover:text-white transition">Términos</a>
+                <a href="#" class="hover:text-white transition">Cookies</a>
+            </div>
+        </div>
+    </footer>
+
+
+</body>
+<script src="app.js"></script>
+
+</html>
