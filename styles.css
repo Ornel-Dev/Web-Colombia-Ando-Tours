@@ -128,3 +128,36 @@ a:hover,
  .center-text{
   text-align: center;
  }
+
+ /* BOTON DE WHATSAPP*/
+
+ /* ==========================================================================
+   COMPONENTE: Botón Flotante de WhatsApp (Optimizado y Anti-Parpadeo)
+   ========================================================================== */
+.whatsapp-float {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background-color: #25D366;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  z-index: 999;
+  transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.whatsapp-float:hover {
+  color: red;
+}
+
+
+
+.whatsapp-float svg {
+  width: 30px;
+  height: 30px;
+  fill: white;
+}
