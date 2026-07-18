@@ -24,15 +24,40 @@
     <meta name="twitter:description" content="Descubre paquetes, tours y experiencias auténticas en Colombia desde Ibagué.">
     <meta name="twitter:image" content="https://www.colombiaandotours.com/src/img/tourcolombia.avif">
 
-    <script type="application/ld+json">
+ <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
     {
-      "@context": "https://schema.org",
-      "@type": "TravelAgency",
-      "name": "Colombia Ando Tours",
-      "url": "https://www.colombiaandotours.com",
-      "description": "Agencia de viajes en Ibagué especializada en turismo nacional."
+      "@type": "WebSite",
+      "@id": "https://www.colombiaandotours.com/#website",
+      "url": "https://www.colombiaandotours.com/",
+      "name": "Colombia Ando Tours | Agencia de Viajes en Ibagué",
+      "alternateName": "Colombia Ando",
+      "publisher": {
+        "@id": "https://www.colombiaandotours.com/#organization"
+      }
+    },
+    {
+      "@type": ["TravelAgency", "LocalBusiness", "Organization"],
+      "@id": "https://www.colombiaandotours.com/#organization",
+      "name": "Colombia Ando Tours | Agencia de Viajes en Ibagué",
+      "url": "https://www.colombiaandotours.com/",
+      "logo": "https://www.colombiaandotours.com/logo.png",
+      "image": "https://www.colombiaandotours.com/portada.jpg",
+      "description": "Agencia de viajes especializada en experiencias turísticas y paquetes únicos.",
+      "telephone": "+573009685000",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Carrera 2 # 8-47, Villa Restrepo, Ibagué, Tolima, Colombia",
+        "addressLocality": "Ibagué",
+        "addressRegion": "Tolima",
+        "addressCountry": "CO"
+      }
     }
-    </script>
+  ]
+}
+</script>
 
     <title>Agencia de viajes en Ibagué | Colombia Ando Tours</title>
     <script src="https://cdn.tailwindcss.com"></script>
